@@ -19,3 +19,26 @@ p#custom {
 a#sources{
     text-decoration:underline;
 }
+
+pre, code {
+    font-family: monospace, monospace;
+    color: black;
+}
+
+pre {
+    overflow: auto;
+}
+
+pre > code {
+    display: block;
+    padding: 1rem;
+    word-wrap: normal;
+}
+
+div.output {
+    border: 2px inset lightgrey;
+    padding:2%;
+    margin-bottom:2%;
+}
+
+figcaption { font-weight:bold;}
