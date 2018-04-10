@@ -6,12 +6,6 @@ h1 {
     color:#f1f1f1;
 }*/
 
- h1#First {
-    #font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    font-size: 82px;
-    text-shadow: 4px 4px #343a40;
- }
-
 p#custom {
     font-weight:bold;
     text-shadow: 4px 4px #343a40;
