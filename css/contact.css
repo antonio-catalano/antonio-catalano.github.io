@@ -1,19 +1,24 @@
 input, textarea {
     margin:5%;
-    border:3px solid rgb(135, 131, 131);
-    border:2px solid #1c6c9e;
+    border-bottom:2px inside #1c6c9e;
     border-radius:2%;
     box-shadow: 1px 1px 17px white;
 }
 
 textarea {
-    padding:7% 1%;
+    padding:7% 3%;
 
 }
+
+input[type=text],input[type=email]{
+    padding-left:5%;
+}
+
 input[type=submit] {
     padding:0 3%;
     margin-top:1%;
 }
+
 div.container#new {
     margin:auto;
     border-radius: 10%;
