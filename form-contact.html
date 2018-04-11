@@ -27,54 +27,17 @@
 
 <body>
 
-    <form id="contact-form" action="//formspree.io/your@email.com" method="post">
-    	<input type="text" name="Name" placeholder="Name" required>
-    	<input type="email" name="Email" placeholder="Email" required>
-    	<textarea name="Message" cols="30" rows="6" placeholder="Message" required></textarea>
-    	<!-- CONFIG -->
-    	<input class="is-hidden" type="text" name="_gotcha">
-    	<input type="hidden" name="_subject" value="Subject">
-    	<input type="hidden" name="_cc" value="email@cc.com">
-    	<!-- /CONFIG -->
-    	<input class="submit" type="submit" value="Send">
+    <form id="contactform" action="//formspree.io/antonio.catalano83@outlook.it" method="POST">
+        <input type="text" name="name" placeholder="Your name">
+        <input type="email" name="_replyto" placeholder="Your email">
+        <input type="hidden" name="_subject" value="Website contact" />
+        <textarea name="message" placeholder="Your message"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="submit" value="Send">
     </form>
-
     <script>
-        var $contactForm = $('#contact-form');
-
-        $contactForm.submit(function(e) {
-        	e.preventDefault();
-        	var $submit = $('input:submit', $contactForm);
-        	var defaultSubmitText = $submit.val();
-
-        	$.ajax({
-        		url: '//formspree.io/your@email.com',
-        		method: 'POST',
-        		data: $(this).serialize(),
-        		dataType: 'json',
-        		beforeSend: function() {
-        			//$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-        			$submit.attr('disabled', true).val('Sending message…');
-        		},
-        		success: function(data) {
-        			//$contactForm.append('<div class="alert alert--success">Message sent!</div>');
-        			$submit.val('Message sent!');
-        			setTimeout(function() {
-        				//$('.alert--success').remove();
-        				$submit.attr('disabled', false).val(defaultSubmitText);
-        			}, 5000);
-        		},
-        		error: function(err) {
-        			//$contactForm.find('.alert--loading').hide();
-        			//$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-        			$submit.val('Ops, there was an error.');
-        			setTimeout(function() {
-        				//$('.alert--error').remove();
-        				$submit.attr('disabled', false).val(defaultSubmitText);
-        			}, 5000);
-        		}
-        	});
-        });
+        var contactform =  document.getElementById('contactform');
+        contactform.setAttribute('action', '//formspree.io/' + 'your' + '@' + 'email' + '.' + 'com');
     </script>
 </body>
 </html>
