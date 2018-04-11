@@ -98,9 +98,9 @@ print(count_char())
        </div>
        <hr>
            <p> What does this function do?
-               Simple: it takes an input string (word or sentence or number doesn't matter: the input function returns always a string type)
-               and create a dictionary where as keys we have the characters of the input, and as values the number of ripetitions of that character.
-               If for example we give this input from keyboard <i>'A simple test regarding the input function and the dictonary object'</i>, output will be:</p>
+               Simple: it takes an input string (word or sentence or number, it doesn't matter: the input function returns always a string type)
+               and creates a dictionary where as keys we have the characters of the input, and as values the number of repetitions of that character.
+               If for example we give this input from keyboard '<i>A simple test regarding the input function and the dictionary object</i>', output will be:</p>
                <div  class="output">
                <code>
                    Write word or sentence: A simple test regarding the input function and the dictionary object<br>
@@ -109,11 +109,11 @@ print(count_char())
                </code>
               </div>
           As you can notice a whitespace is a character like any other, and <i>'A'</i> and <i>'a'</i> are two different characters.
-          Ok, now we want to sort in an incresing value the items of our output to have a clearer picture of the frequency counter.
-          We can thing about dictonary as a multiplicity of couples in the form of (key, value).
+          Ok, now we want to sort the items of our output in an increasing value in order to have a clearer picture of the frequency counter.
+          We can think about dictionary as a multiplicity of couples in the form of (key, value).
           If we want to sort by value we must first change the form of the couples: from (key, value)
-          to (value, key).
-          We can do this through a list comprension. Below an example in code: <br><br>
+          into (value, key).
+          We can do this through a list comprehension. Below an example in code: <br><br>
           <code>
               new_couples = [(value, key) for (key, value) in mydict.items()] <br>
           </code>
@@ -121,9 +121,9 @@ print(count_char())
           creating an iterable object.
           Now the last step: call the <i>sorted</i> function where the argument is <i>new_couples</i> list.
           The <i>sorted()</i> method sorts the element of a given iterable in a specific order.
-          Without specify further, this method sorts the element in an ascending order of the first element.
-          In this case the first element is the key-index = [0] of the couple (tuple).
-          So, let's put togheter all pieces:</p><hr>
+          Without specifying any further, this method sorts the argument in the ascending order of its own first element.
+          In this case the first element is the key/index = [0] of the couple (tuple).
+          So, let's put all pieces togheter:</p><hr>
           <div class="codici">
           <figure>
              <figcaption> Final code </figcaption>
