@@ -1,3 +1,35 @@
 input, textarea {
-    margin:7%;
+    margin:5%;
+    border:3px solid rgb(135, 131, 131);
+    border:2px solid #1c6c9e;
+    border-radius:2%;
+    box-shadow: 1px 1px 17px white;
+}
+
+textarea {
+    padding:7% 1%;
+
+}
+input[type=submit] {
+    padding:0 3%;
+    margin-top:1%;
+}
+div.container#new {
+    margin:auto;
+    border-radius: 10%;
+    background: linear-gradient(white,lightgrey, #0cbef5);
+    padding: 4%;
+}
+
+
+input[type=submit]:hover {
+    background-color: #9bcae4;
+    cursor: pointer;
+
+}
+
+input[value=Send] {
+
+    font-weight:bold;
+    color: #1c6c9e;
 }
