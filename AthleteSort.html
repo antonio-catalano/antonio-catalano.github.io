@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sorting a database with python</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/customized.css" rel="stylesheet">
+  </head>
+
+  <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <!--<a class="navbar-brand" href="index.html">The journey of a developer</a>-->
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a> <!-- devo aggiungere class:"nav-link" nel futuro -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a> <!-- devo aggiungere class:"nav-link" nel futuro -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form-contact.html">Contact</a> <!-- devo aggiungere class:"nav-link" nel futuro -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Page Header -->
+      <header class="masthead" style="background-image: url('img/computer-4.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <div class="site-heading">
+                <h1 style="text-shadow: 4px 4px #343a40;">Sorting a database</h1>
+                <span class="subheading"><p id="custom">Problem solving with Python</p></span>
+              </div>
+            </div>
+          </div>
+      </div>
+      </header>
+      <div class="container">
+          <q><b><i> Talk is cheap, show me the code.</i></b></q><br>
+           <cite style="margin-left:5%;">Linus Torvalds</cite>
+           <hr>
+      <article>
+         <p>This problem is a slighty rielaboration of a problem taken from <i>hackerrank</i> site.
+         The full description is here: <a id="sources"href="https://www.hackerrank.com/challenges/python-sort-sort/problem" title="hackerrank" alt="problem solving link">https://www.hackerrank.com/challenges/python-sort-sort/problem</a>.
+         Below a screenshot of the text:</p>
+
+         <img src="img/textsite.jpg" style="margin:4% 0">
+         <p>We take from the keyboard a series of numbers that build a database for a certain number of athletes.
+         We decide the numbers of athlets to put in our database, the number of attributes for each athlete,
+         and the values of each attribute for each athlete.
+         The problem asks to sort the database by the Kth attribute we give through the <i>input()</i> function.
+         You can see my final code below.</p>
+
+
+          <!-- <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto"> -->
+
+        <img src="img/code-1.jpg" style="margin:7% 0">
+
+        <p> In lines 3-4 we take the numbers of athletes (N) and the number of attributes (M) through a
+            "combination" of the <i>input()</i> function, the <i>split</i> method and the <i>map</i> object.
+            In line 10 we build a list where each element is a list of the values of attributes for each athlete.
+            In line 14 we "hook" each athlete with its own attributes through a dictionary.
+            We change the type of the key from list to tuple because keys in a dictionary are immutable, so
+            a list can't be a key in a dictionary because it's mutable.
+            In line 17 we take the <i>Kth</i> attribute from the keyboard (a number from 0 to M-1. We neglect
+            how to handle the error that happens if we put a number out of this range).<br>
+            Line 19 is important: we use the <i>sorted</i> method and the <i>key</i> optional parameter to sort the
+            list by the <i>Kth</i> index of each element of our list.
+            In line 25 we start a <i>for loop</i> in order to show the results in a nice design.
+            In line 28 we use the <i>map</i> object to convert each element of the element of the list in a string.
+            We need this step because the method <i>center</i> in line 30 is a <i>string method</i>, so it doesn't work with numbers.
+            We use the <i>next</i> function because the <i>map</i> object in Python 3 returns a <i>generator</i>, not a list.
+            The <next> function returns the next item from the iterator. <br>
+            So let's see the final output if we put the same input written in the text:</p>
+            <img src="img/code-1-output.jpg" style="margin:7% 0;">
+            <p>You can find my code here: <a href="https://gist.github.com/antonio-catalano/ec509b1fdbbcfb40f1ca8e71e3a101b0" alt="code in github"> GitHub Gist </a></p>
+
+
+    </article>
+    </div>
+
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <ul class="list-inline text-center">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/Antonio03024040">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/antonio.catalano.96">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/antonio-catalano">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <p class="copyright text-muted">&copy; 2018 <a href="#" title="The Journey of a developer" target="_blank">TJOD</a> Antonio Catalano</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Custom scripts for this template -->
+      <script src="js/clean-blog.min.js"></script>
+      </body>
+
+      </html>
