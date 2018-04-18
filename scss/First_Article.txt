@@ -1,0 +1,52 @@
+As a self-taught developer without a computer science degree, the hardest aspect i found when i started doing
+my first python codes was the extreme vastness of informations about programming available on the Web (let's ignore in this article even the great amount of programming books available today).
+"Into the wild" is not only a great movie, but also your sensation when you start alone this endeavour.
+So as first article of this blog i want to give you useful indications to build your route.
+
+Here you can find a lot of good tutorial videos:
+<ul>
+   <li <h5> Corey Schafer:</h5> one of the best resources on youtube regarding coding imho. Clear and 	skilled. </li>
+   <li> <h5> Socratica:</h5> a very beatiful channel about scientific divulgation. I saw all him videos about Python. Design and clarity above all.
+   <li> <a href="https://www.youtube.com/channel/UCfV36TX5AejfAGIbtwTc7Zw" alt="Chris Hawkes"> <b>Chris Hawkes:</b> another very active and capable developer on youtube. A lot of material on his channel.
+The only problem for me is that i don't speak and listen english perfectly and he talks very quickly.
+But is very skilled, no question. </li>
+</ul>
+
+<h3> Websites </h3>
+<p></p>
+<ul>
+    <li> <a id="sources" href="https://www.programiz.com/python-programming" alt="programiz.com" target="_blank">
+         <b>www.programiz.com:</b></a> This site is a jowel. It's not overloaded in the explanations and he can enlighten you even about
+         the simplest things about python coding. Precise like an hitman about the fundamental concepts.</li>
+    <li> <a id="sources" href="https://python-forum.io/" alt="python forum" target="_blank">
+        <b> python-forum.io:</b></a> Simply the best world python forum. Read the Help/Rules section before posting </li>
+    <li> <a id="sources" href="https://www.hackerrank.com" alt="hackerrank" target="_blank">
+        <b>www.hackerrank.com:</b></a> My favourite site to do practice. There are problems/quiz for every language, not only Python, and
+        every problem is labeled based on complexity. There is even a section about the Core of Computer Science (Algorithms, Data
+        structures, mathematics). You can see thousand of videos and tutorials, but without practise you remain a noob.</li>
+    <li> <a id="sources" href="https://www.w3resource.com/python-exercises/" alt="w3resource" target="_blank">
+         <b>www.w3resource.com/python-exercises:</b></a> A nice site where to find useful exercise not too complex.
+         Perfect for the beginning stage.</li>
+    <li> <a id="sources" href="https://docs.python.org/3/" alt="official documentation" target="_blank">
+        <b>docs.python.org</b></a> Last but not least, the official documentation. THE source. For who starts,it can be a little hard
+        to understand a so strict language but examine it sometimes like a training.</li>
+
+<h3> Online books</h3>
+ <p></p>
+
+<ul>
+    <li>  <a id="sources" href="https://automatetheboringstuff.com/#toc" alt="automate-theBoringStuff" target="_blank">
+          <b>Automate the boring stuff with Python</b></a> Great book. It won't be easy to finish it and to solve all his exercises
+          and projects inside. The book starts with a beginning-stage-approach and becomes gradually complex chapter by chapter.
+          It's not a book about theory and explanations, but a book about automation of practical duties.</li>
+    <li>  <a id="sources" href="http://interactivepython.org/runestone/static/pythonds/index.html" alt="python-dataStructures" target="_blank">
+          <b>interactivepython.org/runestone/static/pythonds</b></a> Ok, here the game becomes a little harder. The reason? With this book
+          you will dive in the core of the computer science, algorithms and data structures, and you will do this challange with Python.
+          There are a lot of videos,courses and books about algorithms, but this book is specific for Python implementation.
+          A must.</li>
+
+<h3> Conclusions </h3>
+<p></p>
+<p>I tried to include a sufficient number of useful resources to learn Python without an excessive overload.
+In my opinion, every learner has to find an equilibrium between the great number of available inputs on the Web and
+the inputs to grab and examine in deepth. Otherwise confusion and burnout can happen.<p>
