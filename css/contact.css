@@ -7,7 +7,7 @@ input, textarea {
 
 textarea {
     padding:7% 3%;
-
+    box-shadow: 1px 1px 17px white;
 }
 
 input[type=text],input[type=email]{

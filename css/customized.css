@@ -43,7 +43,46 @@ div.output {
 
 figcaption { font-weight:bold;}
 
+
+@media screen and (min-width : 920px) {
+    #imgText {
+        width:80%;
+    }
+}
+
+@media screen and (max-width : 920px) {
+    #imgText {
+        width:100%;
+    }
+}
+
 #imgCode-1 {
     margin:7% 0;
     width:100%;
 }
+
+#imgCode-1-output {
+    margin:7% 0;
+    width:70%;
+}
+
+#imgPaesaggio {
+    width:70%;
+    height:50%;
+    border-radius : 50%;
+}
+
+@media screen and (max-width : 920px) {
+    #imgPaesaggio {
+        width:100%;
+        height:80%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    #imgCode-1-output {width:100%}
+}
+
+  a.archive {
+      text-decoration: underline;
+  }
