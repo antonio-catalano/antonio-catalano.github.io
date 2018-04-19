@@ -8,8 +8,14 @@
     width:60%;
 }
 
+#Dynamic-output-larger {
+    margin:3% 8%;
+    width:40%;
+}
+
+
 @media screen and (max-width : 600px) {
-    #Dynamic-ouput {width:100%}
+    #Dynamic-ouput,#Dynamic-output-larger {width:100%}
 }
 
 @media screen and (max-width : 600px) {
