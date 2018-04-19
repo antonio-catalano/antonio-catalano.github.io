@@ -15,7 +15,11 @@
 
 
 @media screen and (max-width : 600px) {
-    #Dynamic, #Dynamic-output-larger {width:100%}
+    #Dynamic-output-larger {width:100%}
+}
+
+@media screen and (max-width : 600px) {
+    #Dynamic {width:100%}
 }
 
 @media screen and (max-width : 600px) {
