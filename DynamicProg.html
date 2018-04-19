@@ -20,6 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
     <link href="css/customized.css" rel="stylesheet">
+    <link href="css/DynamicAlgoCss/Dynamic.css" rel="stylesheet">
   </head>
 
   <body>
@@ -57,8 +58,8 @@
           <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
               <div class="post-heading">
-                <h1 style="text-shadow: 4px 4px #343a40;margin-left:15%;font-size:2.5em;">Dynamic Programming</h1>
-                <span style="margin-left:15%" class="meta">How to find the maximum profit
+                <h1 style="text-shadow: 4px 4px #343a40;margin-left:15%;font-size:2.5em;">Dynamic Programming with Python</h1>
+                <span style="margin-left:15%" class="meta">Posted by
                   <a href="index.html">Antonio Catalano</a>
                   on April 19, 2018</span>
               </div>
@@ -85,37 +86,37 @@
                  Honestly, under this specific constraint, a dynamic algorithm is not necessary.
                  <ol><h4>For two reasons:</h4>
                  <li>We have only five items</li>
-                 <li>It's easy to find the item with the highest value/weight ratio (item 3), and 20 <i>module</i> 4 is zero, so it is
+                 <li>It's easy to find the item with the highest value/weight ratio (item 3), and 20 <i>modulo</i> 4 is zero, so it is
                      obvious that to maximize the profit we must take the item 3 for 5 times (20/4).
                      And we will obtain a total profit of 40.</li>
                      </ol>
                 So, nothing interesting so far.<br>
                 But what happens if we have 10 items like this and our weight constraint is for example <u>38</u> ?<br><br>
-                <img id= "imgCode-1-output" src="img/DynamicAlgo/displayTab.jpg"><br>
+                <img id= "Dynamic-output" src="img/DynamicAlgo/displayTab.jpg"><br><br>
                 The problem in this scenario is much harder to solve and we need to elaborate a more complicated algorithm:
-                the Dynamic Programming Algorithm.</p>
+                a Dynamic Programming Algorithm.</p>
             <p> In order to do this we have to write two different functions:<br>
                 The first function will find the maximum profit obtainable.<br>
                 The second function will print the selection of items inside our knapsack that give the maximum profit.<br>
-                The first part is below:
-                <img id= "imgCode-1" src="img/DynamicAlgo/DynamicFirstPart.jpg"></p>
+                The first part is below:</p>
+                <img id= "Dynamic" src="img/DynamicAlgo/DynamicFirstPart.jpg">
                 <p>As you can notice the function <i>createTab</i> draws the dictionary object written in line 1 in the clear table showed before.
                 The function <i>buttonUpDynamic</i> is the function created to calculate the maximum profit obtainable.
                 When you develop a dynamic programming algorithm you can choose a top-down method or a bottom-up method.
                 We have chosen a bottom-up method. You can delve into the matter in the chapter 15 of the book:
                 <i>"Introduction to Algorithms"</i> by <cite>Cormen, Leiserson, Rivest, Stein</cite>.<br>
                 The list created in line 18 will be necessary to build the next function of our code.<br>
-                The output of this first part is:<br>
-                <img id= "imgCode-1-output" src="img/DynamicAlgo/OutputFirstPart.jpg"><br>
+                The output of this first part is:<br></p>
+                <img id= "Dynamic-output" src="img/DynamicAlgo/OutputFirstPart.jpg"><br><br>
                 In line 32 we decided to print only the maximum profit of our weight constraint (38).
                 But if you delete that line, the code will print the maximum obtainable profit for each bearable weight until 38.</p>
 
                 <p>So now we know that the maximum profit we can obtain from our selection under the weight constraint of 38, is 56.<br>
                 But we don't know how our selection is composed.
                 So we must build the second fundamental function of our code:
-                <img id= "imgCode-1" src="img/DynamicAlgo/DynamicSecondPart.jpg">
+                <img id= "Dynamic" src="img/DynamicAlgo/DynamicSecondPart.jpg"><br><br><br><br>
                And the final output of our Dynamic Programming Algorithm is:</p>
-                <img id= "imgCode-1-output" src="img/DynamicAlgo/OutputFinal.jpg">
+                <img id= "Dynamic-output" src="img/DynamicAlgo/OutputFinal.jpg">
 
                 <p> <b>P.S.</b>: this is not an easy code. In order to understand all the steps i suggest to replicate the lines 20-25 and lines 39-51 with
                     paper and pen.
