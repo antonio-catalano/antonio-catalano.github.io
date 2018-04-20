@@ -80,10 +80,10 @@
              Find below a screenshot of the text:</p>
 
              <img id= "Dynamic" src="img/DynamicAlgo/DynamicText.jpg">
-             <p> We have to find the optimal combination of items that maximizes the total profit, under the constraint of the maximum
+             <p> Our task is to find the optimal combination of items that maximizes the total profit, under the constraint of the maximum
                  bearable weight.
                  The problem asks to be solved with a bearable weight of 20.
-                 Honestly, under this specific constraint, a dynamic algorithm is not necessary.
+                 Honestly a dynamic programming code is not necessary under this specific constraint.
                  <ol><h4>For two reasons:</h4>
                  <li>We have only five items</li>
                  <li>It's easy to find the item with the highest value/weight ratio (item 3), and 20 <i>modulo</i> 4 is zero, so it is
@@ -91,7 +91,7 @@
                      And we will obtain a total profit of 40.</li>
                      </ol>
                 So, nothing interesting so far.<br>
-                But what happens if we have 10 items like this and our weight constraint is for example <u>38</u> ?<br><br>
+                But what happens instead if we have 10 items and our weight constraint is for example <u>38</u> as you can see below ?<br><br>
                 <img id= "Dynamic-output-larger" src="img/DynamicAlgo/displayTab.jpg"><br><br>
                 The problem in this scenario is much harder to solve and we need to elaborate a more complicated algorithm:
                 a Dynamic Programming Algorithm.</p>
@@ -100,10 +100,10 @@
                 The second function will print the selection of items inside our knapsack that give the maximum profit.<br>
                 The first part is below:</p>
                 <img id= "Dynamic" src="img/DynamicAlgo/DynamicFirstPart.jpg">
-                <p>As you can notice the function <i>createTab</i> draws the dictionary object written in line 1 in the clear table showed before.
+                <p>As you can notice the function <i>createTab</i> draws the dictionary object written in line 1 in a clear table (as shown above).
                 The function <i>buttonUpDynamic</i> is the function created to calculate the maximum profit obtainable.
                 When you develop a dynamic programming algorithm you can choose a top-down method or a bottom-up method.
-                We have chosen a bottom-up method. You can delve into the matter in the chapter 15 of the book:
+                We have chosen a bottom-up method. You can delve into the matter in chapter 15 of the book:
                 <i>"Introduction to Algorithms"</i> by <cite>Cormen, Leiserson, Rivest, Stein</cite>.<br>
                 The list created in line 18 will be necessary to build the next function of our code.<br>
                 The output of this first part is:<br></p>
@@ -111,17 +111,16 @@
                 In line 32 we decided to print only the maximum profit of our weight constraint (38).
                 But if you delete that line, the code will print the maximum obtainable profit for each bearable weight until 38.</p>
 
-                <p>So now we know that the maximum profit we can obtain from our selection under the weight constraint of 38, is 56.<br>
-                But we don't know how our selection is composed.
-                So we must build the second fundamental function of our code:
+                <p>So now we know that 56 is the maximum profit we can obtain from our selection under the weight constraint of 38.<br>
+                We still don't know how our selection is composed, therefore we must build the second fundamental function of our code:
                 <img id= "Dynamic" src="img/DynamicAlgo/DynamicSecondPart.jpg"><br><br><br><br>
                And the final output of our Dynamic Programming Algorithm is:</p>
                 <img id= "Dynamic-output" src="img/DynamicAlgo/OutputFinal.jpg">
 
-                <p> <b>P.S.</b>: this is not an easy code. In order to understand all the steps i suggest to replicate the lines 20-25 and lines 39-51 with
-                    paper and pen.
+                <p> <b>P.S.</b>: this is not an easy code. In order to understand all the steps I suggest to manually transcribe lines 20-25 and lines 39-51
+                    by using paper and pen in order to keep track of how the code works.
                 </p>
-                <p>You can find the whole code here: <a href="https://gist.github.com/antonio-catalano/1baf9c6552502da0baac19853135473b" alt="GutHub code">Github</a></p>
+                <p>You can find the entire script here: <a href="https://gist.github.com/antonio-catalano/1baf9c6552502da0baac19853135473b" alt="GutHub code">Github</a></p>
             </article>
         </div>
 
