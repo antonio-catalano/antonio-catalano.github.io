@@ -12776,7 +12776,7 @@ Queste le prime 5 Zone strategiche:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="font-size:16px;"> Sotto c'è la lista dei Paesi in cui piu' è aumentata l'aspettativa di vita dal 1960 al 2016.<br> Nelle Maldive è aumentata quasi di 40 anni, un incremento enorme.<br> Da notare che in questa lista non c'è nessun Paese del mondo Occidentale: la mia personale conclusione (bisogna andare con le pinze quando si traggono conclusioni relativi a un sistema complesso) è che se è vero che esiste la globalizzazione, allora l'economia globalizzata ha aiutato molto di piu' i Paesi poveri o che prima erano reputati del Terzo Mondo, rispetto ai Paesi occidentali.<br> Dal punto di vista del fattore "sopravvivenza" questo è certo. Dal punto di vista di altri fattori non è scontato, ma il fattore "sopravvivenza maggiore" non è un fattore qualunque a mio avviso.<br>
+<p style="font-size:16px;"> Sotto c'è la lista dei Paesi in cui piu' è aumentata l'aspettativa di vita dal 1960 al 2016.<br> Nelle Maldive è aumentata quasi di 40 anni, un incremento enorme.<br> Da notare che in questa lista non c'è nessun Paese del mondo Occidentale: la mia personale conclusione (bisogna essere cauti quando si traggono conclusioni relativi a un sistema complesso) è che se è vero che esiste la globalizzazione, allora l'economia globalizzata ha aiutato molto di piu' i Paesi poveri o che prima erano reputati del Terzo Mondo, rispetto ai Paesi occidentali.<br> Dal punto di vista del fattore "sopravvivenza" questo è certo. Dal punto di vista di altri fattori non è scontato, ma il fattore "sopravvivenza maggiore" non è un fattore qualunque a mio avviso.<br>
 Certamente aiuterebbe sapere esattamente la distribuzione spazio-temporale di conflitti bellici per capire se ad es. un incremento importante dell'aspettativa di vita è conseguenza diretta della fine di un conflitto degli anni 50-60' in quella zona geografica oppure il fattore "guerra" non è presente come determinante di un aumento di vita attesa in quella zona.<br></p>
 </div>
 </div>
@@ -12931,11 +12931,10 @@ Certamente aiuterebbe sapere esattamente la distribuzione spazio-temporale di co
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[271]:</div>
+<div class="prompt input_prompt">In&nbsp;[296]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">maldive</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Maldives&#39;</span><span class="p">]</span>
-<span class="n">maldive</span> <span class="o">=</span> <span class="n">maldive</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="n">maldive</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">maldive</span><span class="p">[</span><span class="n">maldive</span><span class="p">[</span><span class="s1">&#39;Indicator Name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Life expectancy at birth, total (years)&#39;</span><span class="p">]</span>
 </pre></div>
 
@@ -12949,7 +12948,7 @@ Certamente aiuterebbe sapere esattamente la distribuzione spazio-temporale di co
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[271]:</div>
+<div class="prompt output_prompt">Out[296]:</div>
 
 
 
@@ -12983,8 +12982,6 @@ Certamente aiuterebbe sapere esattamente la distribuzione spazio-temporale di co
       <th>1967</th>
       <th>1968</th>
       <th>...</th>
-      <th>2005</th>
-      <th>2006</th>
       <th>2007</th>
       <th>2008</th>
       <th>2009</th>
@@ -12993,6 +12990,8 @@ Certamente aiuterebbe sapere esattamente la distribuzione spazio-temporale di co
       <th>2012</th>
       <th>2013</th>
       <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
     </tr>
     <tr>
       <th>Country Name</th>
@@ -13033,8 +13032,6 @@ Certamente aiuterebbe sapere esattamente la distribuzione spazio-temporale di co
       <td>42.05</td>
       <td>42.76</td>
       <td>...</td>
-      <td>74.15</td>
-      <td>74.77</td>
       <td>75.27</td>
       <td>75.65</td>
       <td>75.92</td>
@@ -13043,10 +13040,12 @@ Certamente aiuterebbe sapere esattamente la distribuzione spazio-temporale di co
       <td>76.40</td>
       <td>76.57</td>
       <td>76.78</td>
+      <td>77.04</td>
+      <td>77.34</td>
     </tr>
   </tbody>
 </table>
-<p>1 rows × 56 columns</p>
+<p>1 rows × 58 columns</p>
 </div>
 </div>
 
