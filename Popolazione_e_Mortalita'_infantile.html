@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hat check problem</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="css/customized.css" rel="stylesheet">
 <title>Popolazione_e_Mortalita'_infantile</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
@@ -8451,15 +8470,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11252,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11695,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11749,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11768,12 +11787,80 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="about.html">About</a> <!-- class="nav-link" da aggiungere in futuro -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Archive.html">Archive</a> <!-- class="nav-link" da aggiungere in futuro -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form-contact.html">Contact</a> <!-- class="nav-link" da aggiungere in futuro -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/road.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1 style="font-family:Times New Roman;margin-left:25%">Data analysis study with Python/Jupyter<br> (codici nascosti per una migliore leggibilità)</h1>
+             <span style="margin-left:25%" class="meta">Posted by
+               <a href="index.html">Antonio Catalano</a>
+               on June 12, 2018</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<script>
+  jQuery(document).ready(function($) {
+
+  $(window).load(function(){
+    $('#preloader').fadeOut('slow',function(){$(this).remove();});
+  });
+
+  });
+</script><style type="text/css">
+  div#preloader { position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fff url('http://preloaders.net/preloaders/720/Moving%20line.gif') no-repeat center center;
+  }
+
+</style><div id="preloader"></div>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="o">,</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -11801,64 +11888,6 @@ Studio Popolazione e mortalita' infantile </h1>
 <h3 style='text-shadow:2px 2px 2px #FFE4C4;'> Prendiamo il database generale dalla 'World Bank Open Data', un database che riguarda tutti i Paesi e le zone strategiche del mondo, per una serie di indicatori che vanno dal 1960 al 2016.</h3>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
-<span class="s1">code_show=true; </span>
-<span class="s1">function code_toggle() {</span>
-<span class="s1"> if (code_show){</span>
-<span class="s1"> $(&#39;div.input&#39;).hide();</span>
-<span class="s1"> } else {</span>
-<span class="s1"> $(&#39;div.input&#39;).show();</span>
-<span class="s1"> }</span>
-<span class="s1"> code_show = !code_show</span>
-<span class="s1">} </span>
-<span class="s1">$( document ).ready(code_toggle);</span>
-<span class="s1">&lt;/script&gt;</span>
-<span class="s1">The raw code for this IPython notebook is by default hidden for easier reading.</span>
-<span class="s1">To toggle on/off the raw code, click &lt;a href=&quot;javascript:code_toggle()&quot;&gt;here&lt;/a&gt;.&#39;&#39;&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[52]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-The raw code for this IPython notebook is by default hidden for easier reading.
-To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>.
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12454,7 +12483,7 @@ Iraq                              4.10
 Solomon Islands                   4.09
 Mauritania                        4.01
 Malawi                            4.00
-                                  ... 
+                                  ...
 European Union                    0.25
 Finland                           0.24
 Austria                           0.24
@@ -12583,7 +12612,7 @@ Qatar: 1960-&gt; 47384.0  2016-&gt; 2569804.0
 
 <span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;World&#39;</span><span class="p">,</span><span class="s1">&#39;China&#39;</span><span class="p">,</span><span class="s1">&#39;India&#39;</span><span class="p">,</span><span class="s1">&#39;Indonesia&#39;</span><span class="p">]</span>
 
-<span class="k">for</span> <span class="n">graph</span><span class="p">,</span><span class="n">elem</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">Grafici</span><span class="p">,</span><span class="n">lista</span><span class="p">):</span>    
+<span class="k">for</span> <span class="n">graph</span><span class="p">,</span><span class="n">elem</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">Grafici</span><span class="p">,</span><span class="n">lista</span><span class="p">):</span>
 <span class="c1">#     if elem==&#39;World&#39;:</span>
 <span class="c1">#         yticks = [2*10**9, 3*10**9, 4*10**9, 5*10**9, 6*10**9, 7*10**9, 8*10**9]</span>
 <span class="c1">#         yticks = [str(e) for e in yticks]</span>
@@ -13544,7 +13573,7 @@ Name: Sierra Leone, dtype: float64</pre>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <script>
-code_show=true; 
+code_show=true;
 function code_toggle() {
  if (code_show){
  $('div.input').hide();
@@ -13552,7 +13581,7 @@ function code_toggle() {
  $('div.input').show();
  }
  code_show = !code_show
-} 
+}
 $( document ).ready(code_toggle);
 </script>
 The raw code for this IPython notebook is by default hidden for easier reading.
@@ -13584,7 +13613,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
   </div>
 </body>
 
- 
+
 
 
 </html>
