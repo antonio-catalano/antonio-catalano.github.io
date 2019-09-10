@@ -103,7 +103,7 @@ print(count_char())
                If for example we give this input from keyboard '<i>A simple test regarding the input function and the dictionary object</i>', output will be:</p>
                <div  class="output">
                <code>
-                   Write word or sentence: A simple test regarding the input function and the dictionary object<br>
+                   Write word or sentence: <em>A simple test regarding the input function and the dictionary object</em><br>
                    {'A': 1, ' ': 10, 's': 2, 'i': 6, 'm': 1, 'p': 2, 'l': 1, 'e': 6, 't': 8, 'r': 3, 'g': 2, 'a': 3, 'd': 3, 'n': 6, 'h': 2, 'u': 2, 'f': 1, 'c': 3, 'o': 3, 'y': 1, 'b': 1, 'j': 1}
 
                </code>
@@ -143,7 +143,7 @@ mydict = count_char()
 
 new_x_List = [(value,key) for (key,value) in mydict.items()]
 
-for i,k in sorted(new_x_List):
+for i,k in sorted(new_x_List, reverse = True):
     print(k, '-->', i)
 </code>
 </pre>
@@ -153,31 +153,34 @@ for i,k in sorted(new_x_List):
         <p> Output: </p>
             <div class="output">
                 <code>
-                Write word or sentence: A simple test regarding the input function and the dictionary object<br><br>
-
-                A --> 1 <br>
-                b --> 1<br>
-                f --> 1<br>
-                j --> 1<br>
-                l --> 1<br>
-                m --> 1<br>
-                y --> 1<br>
-                g --> 2<br>
-                h --> 2<br>
-                p --> 2<br>
-                s --> 2<br>
-                u --> 2<br>
-                a --> 3<br>
-                c --> 3<br>
-                d --> 3<br>
-                o --> 3<br>
-                r --> 3<br>
-                e --> 6<br>
-                i --> 6<br>
-                n --> 6<br>
+                Write word or sentence: <em>A simple test regarding the input function and the dictionary object</em><br><br>
+                  
+                &nbsp --> 10 <br>
                 t --> 8<br>
-               &nbsp --> 10
+                n --> 6<br>
+                i --> 6<br>
+                e --> 6<br>
+                r --> 3<br>
+                o --> 3<br>  
+                d --> 3<br>  
+                c --> 3<br>  
+                a --> 3<br>
+                u --> 2<br>  
+                s --> 2<br>  
+                p --> 2<br>  
+                h --> 2<br>  
+                g --> 2<br>  
+                y --> 1<br> 
+                m --> 1<br>  
+                l --> 1<br> 
+                j --> 1<br>
+                f --> 1<br>
+                b --> 1<br>
+                A --> 1 <br>
               </code>
+              
+              We could achive the same result in a faster way by exploiting the module <b>Counter</b> from <b>collections</b>.
+              I invite you to check it out for a more pythonic and compact code.
           </div>
 
 
