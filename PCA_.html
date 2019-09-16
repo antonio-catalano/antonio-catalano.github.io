@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>PCA</title>
+<title>PCA_</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box
+/* This file is a compatability layer.  It allows the usage of flexible box 
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this
+`Modern browsers` comments below).  Browsers that are known to implement this 
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+
+    Internet Explorer 11+ 
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for
+  /* This injects handle bars (a short, wide = symbol) for 
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13018,7 +13018,7 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-
+    
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -13085,14 +13085,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  }
-  div.output_wrapper {
+  } 
+  div.output_wrapper { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
-  div.output {
+  div.output { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
 }
 </style>
@@ -13129,8 +13129,22 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Principal-Component-Analysis-(PCA)-with-Scikit-learn-and-Matplotlib"><span style="background:#F5F5DC">Principal Component Analysis (PCA) with Scikit-learn and Matplotlib</span><a class="anchor-link" href="#Principal-Component-Analysis-(PCA)-with-Scikit-learn-and-Matplotlib">&#182;</a></h2><hr>
+<center><h1 style="color:#00BFFF;font-family:courier;background: rgba(0,0,0,.8);border-radius: 5px;"> The Journey of a developer</h1></center><table style="width:80%">
+  <tr>
+    <th><a href="https://antonio-catalano.github.io/" style="font-family:courier;font-size:160%;" target="_blank"><i>Home</i></a></th>
+    <th><a href="https://antonio-catalano.github.io/about.html"  style="font-family:courier;font-size:160%;"  target="_blank"><i>About</i></a></th>              
+    <th><a href="https://antonio-catalano.github.io/Archive.html"  style="font-family:courier;font-size:160%;"  target="_blank"><i>Archive</i></a></th>
 
+<th><i></i></th>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center> <h1> Principal Component Analysis (PCA) with Scikit-learn and Matplotlib </h1></center>
 </div>
 </div>
 </div>
@@ -13283,8 +13297,8 @@ div.prompt {display:none}
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we split the set in training and test set; for this study is not necessary the k-fold cross validation methodology</span>
-
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">22</span><span class="p">)</span>
+    
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">22</span><span class="p">)</span>                                                                                           
 </pre></div>
 
     </div>
@@ -13333,7 +13347,7 @@ div.prompt {display:none}
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>R^2 on training set: 0.986
+<pre>R^2 on training set: 0.986 
  R^2 on test set: 0.987
 </pre>
 </div>
@@ -13482,7 +13496,7 @@ div.prompt {display:none}
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>R^2_pca on training set: 0.957
+<pre>R^2_pca on training set: 0.957 
  R^2_pca on test set: 0.963
 </pre>
 </div>
@@ -13520,7 +13534,7 @@ Let's see below.</p>
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">&#39;font.family&#39;</span><span class="p">:</span> <span class="s1">&#39;sans serif&#39;</span><span class="p">})</span>
 
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">8</span><span class="p">));</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">8</span><span class="p">));</span> 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
 
@@ -13688,11 +13702,76 @@ In our specific simulation, the bias component was more important than the varia
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<html>
+    <hr style='border-top: 2px solid #778899;'>
+               <!-- Footer -->
+               <footer>
+               <!--  <div class="container">
+                   <div class="row">
+                     <div class="col-lg-8 col-md-10 mx-auto">
+                       <ul class="list-inline text-center">
+                         <li class="list-inline-item">
+                           <a href="https://twitter.com/Antonio03024040">
+                             <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                             </span>
+                           </a>
+                         </li>
+                         <li class="list-inline-item">
+                           <a href="https://www.facebook.com/antonio.catalano.96">
+                             <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                             </span>
+                           </a>
+                         </li>
+                         <li class="list-inline-item">
+                           <a href="https://github.com/antonio-catalano">
+                             <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                             </span>
+                           </a>
+                         </li>
+                       </ul> -->
+                       <p class="copyright text-muted">&copy; 2018 <a href="index.html" title="The Journey of a developer" target="_blank">TJOD</a> Antonio Catalano</p>
+                     </div>
+                   </div>
+                 </div>
+               </footer>
+
+<!-- Bootstrap core JavaScript
+               <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+Custom scripts for this template 
+               <script src="js/clean-blog.min.js"></script>-->
+
+</html>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
     </div>
   </div>
 </body>
 
-
+ 
 
 
 </html>
