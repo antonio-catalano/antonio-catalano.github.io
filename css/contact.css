@@ -22,7 +22,7 @@ input[type=submit] {
 div.container#new {
     margin:auto;
     border-radius: 2%;
-    background-image: url("img/blue.jpg");
+    background-image: url("blue.jpg");
     padding: 5%;
 }
 
