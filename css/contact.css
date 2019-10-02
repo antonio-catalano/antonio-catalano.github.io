@@ -1,12 +1,12 @@
 input, textarea {
-    margin:5%;
-    border-bottom:2px inside #1c6c9e;
-    border-radius:2%;
-    box-shadow: 1px 1px 17px white;
+    margin:2%;
+    border-bottom:1px inside #1c6c9e;
+    border-radius:1%;
+    box-shadow: 1px 1px 4px white;
 }
 
 textarea {
-    padding:7% 3%;
+    padding:7% 3.8%;
     box-shadow: 1px 1px 17px white;
 }
 
@@ -21,14 +21,14 @@ input[type=submit] {
 
 div.container#new {
     margin:auto;
-    border-radius: 10%;
-    background: linear-gradient(white,lightgrey, #0cbef5);
-    padding: 4%;
+    border-radius: 2%;
+    background-image: url("D:/Web_Develop/My-Blog/MyBlogPages/img/blue.jpg");
+    padding: 5%;
 }
 
 
 input[type=submit]:hover {
-    background-color: #9bcae4;
+    background-color: white;
     cursor: pointer;
 
 }
@@ -36,5 +36,5 @@ input[type=submit]:hover {
 input[value=Send] {
 
     font-weight:bold;
-    color: #1c6c9e;
+    color: #595959;
 }
