@@ -22,7 +22,7 @@ input[type=submit] {
 div.container#new {
     margin:auto;
     border-radius: 2%;
-    background-image: url("css/phone.jpg");
+    background-image: url("phone.jpg");
     padding: 5%;
 }
 
