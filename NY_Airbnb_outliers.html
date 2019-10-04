@@ -13228,7 +13228,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="nx">javascript</span> 
@@ -13253,10 +13253,10 @@ div#notebook {
 
 
 
-<div id="3b5a7b85-a01d-4e18-bfe8-4e6f6250ccdf"></div>
+<div id="47616a00-a7c6-41f9-8a6e-0aa2b48b6568"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#3b5a7b85-a01d-4e18-bfe8-4e6f6250ccdf');
+var element = $('#47616a00-a7c6-41f9-8a6e-0aa2b48b6568');
 IPython.OutputArea.prototype._should_scroll = function(lines) {
     return false;
 }
@@ -13272,7 +13272,7 @@ IPython.OutputArea.prototype._should_scroll = function(lines) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="o">,</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span><span class="o">,</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -13319,7 +13319,7 @@ In the first part of our study we started to do that grouping and the pivot tabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">by_room_type</span>
@@ -13335,7 +13335,7 @@ In the first part of our study we started to do that grouping and the pivot tabl
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13501,7 +13501,7 @@ So if in an empirical distribution that reasonably follows a normal distribution
 </blockquote>
 <p>But our distribution is not simmetric and we have already seen that extreme values are present: so we preferred the median to the mean as location metric, and the interquartile range to the standard deviation as dispersion metric.<br>
 So we can't use the threshold of 3 standard deviation from the mean to spot an outlier.</p>
-<p>A largely used threshold for not well-behaved distributions is represented by the value: $ Q3 + 3\times IQR $, where $ Q3 $ is the third quartile and $ IQR $ is the difference between the third quartile and the first quartile ($ Q3 - Q1 $).<br>
+<p>A largely used threshold for the right tail and for not well-behaved distributions is represented by the value: $ Q3 + 3\times IQR $ (sometimes we can find the factor 1.5 and not 3: let's say that the 3 version is the severe threshold), where $ Q3 $ is the third quartile and $ IQR $ is the difference between the third quartile and the first quartile ($ Q3 - Q1 $).<br>
 Once we have calculated that threshold for each empirical distribution, we can calculate also the ratio between the maximum value of the distribution and that threshold.<br>
 If that ratio is &gt; 1 , so at least one point (the maximum) is an outlier.<br>
 Moreover, the value of this ratio says to us how extreme an outlier is.<br><br>
@@ -13513,7 +13513,7 @@ The <em>threshold</em> column reports the $Q3 + 3 \times IQR $ value.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="k">import</span> <span class="n">iqr</span>
@@ -13526,7 +13526,7 @@ The <em>threshold</em> column reports the $Q3 + 3 \times IQR $ value.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">75</span><span class="p">)</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">75</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">25</span><span class="p">)))</span>
@@ -13557,7 +13557,7 @@ The <em>threshold</em> column reports the $Q3 + 3 \times IQR $ value.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13798,7 +13798,7 @@ In order to know that we made the following script (toogle the code button if yo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="k">import</span> <span class="n">product</span>
@@ -13811,7 +13811,7 @@ In order to know that we made the following script (toogle the code button if yo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">max_perc</span> <span class="o">=</span> <span class="mi">0</span>
@@ -13967,13 +13967,19 @@ Instead if we are very rich, we can be curious about the most extreme outliers a
 For example, regarding the largest fraction in (<em>Shared room, Brooklyn</em>), that value can be provoked by different reasons:</p>
 <ul>
 <li>it's possible that in Brooklyn, the <em>shared room</em> type listings are characterized by an important variability of the fondamental factors that drive the price.</li>
-<li>it's possible that inside Brooklyn the <em>shared rooms</em> are located in a broder territory with less regularized densities compared to other distributions. This aspect can increase the price volatility.</li>
+<li>it's possible that inside Brooklyn the <em>shared rooms</em> are located in a broder territory but with less regularized density compared to other distributions. This aspect can increase the price volatility.</li>
 <li>it's possible that there are no particular reasons, and the larger number of outliers in that (room_type, borough) is a pure coincidence.</li>
 </ul>
-<p>Regarding the last point, we can consider the % of outliers as an empirical distribution with 15 elements.
-We already know that the maximum of this distribution is 7.
+<p>Regarding the last point, we can consider the % of outliers as an empirical distribution with 14 elements (we exclude the (<em>Shared room, Staten Island</em>) distribution because we have too few observations (9)).
+We already know that the maximum of the distribution of the fraction of outliers is 7.<br>
+How can we know if this maximum value can be considered an outlier or not?
 The $ IQR = 2 $ and the $Q3 = 5 $, so the threshold is $ 5 + 3 \times 2 = 11 $.
-So if we applied at the % outliers distribution the same procedure that we applied at the price distributions, we arrive at the conclusion that a fraction of 7 % of outliers (in the price distribution) is not an outlier (in the % outlier distribution), hence the probability that there are no particular reasons for the larger fraction in the (<em>Shared room, Brookling</em>) is high.</p>
+So if we applied at the % outliers distribution the same procedure that we applied at the price distributions, we arrive at the conclusion that a fraction of 7 % of outliers (in the price distribution) is not an outlier (in the % outlier distribution), hence we could say that the probability that there are no particular reasons for the larger fraction in the (<em>Shared room, Brookling</em>) is high.<br>
+But with only 14 observations this procedure loses effectiveness because is more difficult to exceed the threshold.<br>
+For example, consider this sample of only 4 observations: (1, 5, 10, 100).<br>
+In this sample no outliers are present, even if 100 seems very large compared to the rest.
+But the $Q3 + 3 \times IQR$ is 118, so 100 is not considered an outlier.<br>
+So we must take this threshold with a grain of salt when we have few observations.</p>
 
 </div>
 </div>
