@@ -13253,10 +13253,10 @@ div#notebook {
 
 
 
-<div id="f483d342-8966-4463-ac47-52cf848b8f94"></div>
+<div id="d56a484f-31f5-43fd-bf7e-dfe6807f514f"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#f483d342-8966-4463-ac47-52cf848b8f94');
+var element = $('#d56a484f-31f5-43fd-bf7e-dfe6807f514f');
 IPython.OutputArea.prototype._should_scroll = function(lines) {
     return false;
 }
@@ -13953,33 +13953,6 @@ No outliers
 Then we reported the fraction of outliers for each distribution.<br>
 So while the distribution with the most extreme outlier is (<em>Private room, Queens</em>) with a <em>max/threshold</em> value of 62.8, 
 the distribution with more outliers is the (<em>Shared room, Brooklyn</em>), where 7 % of listings are outliers.<br></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>How can those two informations about outliers be intepreted ?</p>
-<p>By the customer side, if we are a normal person that doesn't afford an accomodation of 10 thousand dollars, the knowledge of where the most extreme value are present is an useless information for us. We will never book a listing so expensive.<br>
-Instead if we are very rich, we can be curious about the most extreme outliers and we may want to verify how can be possible that a listing can be quoted at almost 63 times the threshold. Maybe there is a small lake within the property, or something very unusual.<br></p>
-<p>But if we are not the Sultan of Brunei hence we are more interested in the fraction of outliers.<br>
-For example, regarding the largest fraction in (<em>Shared room, Brooklyn</em>), that value can be provoked by different reasons:</p>
-<ul>
-<li>it's possible that in Brooklyn, the <em>shared room</em> type listings are characterized by an important variability of the fondamental factors that drive the price.</li>
-<li>it's possible that inside Brooklyn the <em>shared rooms</em> are located in a broder territory but with less regularized density compared to other distributions. This aspect can increase the price volatility.</li>
-<li>it's possible that there are no particular reasons, and the larger number of outliers in that (room_type, borough) is a pure coincidence.</li>
-</ul>
-<p>Regarding the last point, we can consider the % of outliers as an empirical distribution with 14 elements (we exclude the (<em>Shared room, Staten Island</em>) distribution because we have too few observations (9)).
-We already know that the maximum of the distribution of the fraction of outliers is 7.<br>
-How can we know if this maximum value can be considered an outlier or not?
-The $ IQR = 2 $ and the $Q3 = 5 $, so the threshold is $ 5 + 3 \times 2 = 11 $.
-So if we applied at the % outliers distribution the same procedure that we applied at the price distributions, we arrive at the conclusion that a fraction of 7 % of outliers (in the price distribution) is not an outlier (in the % outlier distribution), hence we could say that the probability that there are no particular reasons for the larger fraction in the (<em>Shared room, Brookling</em>) is high.<br>
-But with only 14 observations this procedure loses effectiveness because is more difficult to exceed the threshold.<br>
-For example, consider this sample of only 4 observations: (1, 5, 10, 100).<br>
-In this sample no outliers are present, even if 100 seems very large compared to the rest.
-But the $Q3 + 3 \times IQR$ is 118, so 100 is not considered an outlier.<br>
-So we must take this threshold with a grain of salt when we have few observations.</p>
 
 </div>
 </div>
