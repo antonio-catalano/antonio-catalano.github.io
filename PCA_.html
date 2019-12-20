@@ -13154,9 +13154,10 @@ div#notebook {
 <p>Principal Component Analysis is a <em> dimension reduction method </em> that <u> transforms </u> the $p$ predictors in $M$ new predictors, with $M &lt; p$.<br>
 The new predictors are linear combinations of the old ones.<br>
 Suppose we have a linear model like:</p>
-<p>$ y_i = \sum_{j=1}^{p} \beta_i x_j + e_i$</p>
-<p>In order to fit the model faster, or, in order to visualize a 2D or 3D (it's not possible if we have more than 3 predictors), we can reduce the number of predictors through this method, and obtain $M$ new predictors where the $m$ predictor is of the form:<br></p>
-<p>$ Z_m = \sum_{j=1}^{p} \theta_{m,j}  x_j $  , where $ m \in M $</p>
+<p>$ y_i = \sum_{j=1}^{p} \beta_i x_{i,j} + e_i$</p>
+<p>where $y$ is a $N \times 1$ vector.</p>
+<p>In order to fit the model faster, or, in order to visualize a 2D or 3D (it's not possible if we have more than 3 predictors), we can reduce the number of predictors through this method, and obtain $M$ new predictors where the $m$ vector predictor ($N \times 1$) is of the form:<br></p>
+<p>$ Z_m = \sum_{j=1}^{p} \theta_{m,j}  X_j $  , where $ m \in M $</p>
 
 </div>
 </div>
