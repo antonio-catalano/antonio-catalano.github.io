@@ -9,8 +9,8 @@
 
 # _NumPy_
 
-- Sort in place `arr.sort()`
-Sort out of place `np.sort(arr)`
+- Sort in place `arr.sort()`<br>
+- Sort out of place `np.sort(arr)`
 <br>
 - Find the sorted unique values `np.unique(arr)`
 <br>
@@ -65,7 +65,7 @@ It operates out of place.
 - Find the maximum value for each index among 4 arrays of the same shape.
 `np.maximum(arr1, arr2, arr3, arr4)`
 
-#_Pandas_
+# _Pandas_
 
 - Display only 2 floating points for each Series or DataFrame
 `pd.options.display.float_format = '{:.2f}'.format`
