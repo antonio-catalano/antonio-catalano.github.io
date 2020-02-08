@@ -52,14 +52,12 @@ It operates out of place.<br>
 
 - Display only 2 floating points for each Series or DataFrame
 `pd.options.display.float_format = '{:.2f}'.format`<br>
-- Set a column as index
-`df.set_index('name_col', inplace = True)`
-Go back to the original df.
-`df.reset_index(inplace = True)`<br>
-- Delete a column of a DataFrame
-`del df['col_name']`<br>
-- Delete _row2_ and _row5_ of a DataFrame
-`df.drop(['row2', 'row5'], inplace = True)`<br>
+
+- Set a column as index `df.set_index('name_col', inplace = True)`<br>
+Go back to the original df.`df.reset_index(inplace = True)`<br>
+- Delete a column of a DataFrame `del df['col_name']`<br>
+- Delete _row2_ and _row5_ of a DataFrame `df.drop(['row2', 'row5'], inplace = True)`<br>
+
 - Subset of df where both df['col1'] and df['col2'] verify the condition
 `df[(df['col1'] < 0) & (df.col2 > 10)]`<br>
 Note that you __can't__ replace `&` with `and` and brackets are necessary.
@@ -88,13 +86,13 @@ the negative values with __-1__
 `df.dropna(axis = 0)`<br>
 - Drop rows where only the _C_ column has a null value
 `df.dropna(subset = ['C'])`<br>
-- Replace _null_ values with the median value of the corresponding column.
+- Replace _null_ values with the median value of the corresponding column
 `df.fillna(df.median(), axis = 0)`<br>
 - Rename a column
 `df.rename(columns = {'old_name' : 'new_name'}, inplace = True)`<br>
-- Concatenate two series in order to have a DataFrame with two columns.
+- Concatenate two series in order to have a DataFrame with two columns
 `pd.concat([arr1, arr2], axis = 1)`<br>
-- Each element of a series is an element of a given list: true or false?.
+- Each element of a series is an element of a given list: true or false?
 `s.isin(given_list)`<br>
 - Number of null values for each column
 `df.isnull().sum(axis = 0)`<br>
