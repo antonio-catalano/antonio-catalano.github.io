@@ -1,3 +1,7 @@
+---
+title: Document Center
+---
+
 #[Home](https://antonio-catalano.github.io/#) | [About](https://antonio-catalano.github.io/about.html) | [Archive](https://antonio-catalano.github.io/Archive.html) | [Contact](https://antonio-catalano.github.io/form-contact.html)
 
 ### In this article I'm going to summarize some of the most utilized functions and operations in _NumPy_ and _Pandas_.
