@@ -10,7 +10,7 @@
 # _NumPy_
 
 - Sort in place `arr.sort()`<br>
-- Sort out of place `np.sort(arr)`<br>
+Sort out of place `np.sort(arr)`<br>
 - Find the sorted unique values `np.unique(arr)`<br>
 - If _arr1_ is a (3 x 2) matrix and _arr2_ is a (2 x 4) matrix
 `arr1 @ arr2` is the (3 x 4) matrix product.<br>
