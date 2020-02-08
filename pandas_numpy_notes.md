@@ -1,7 +1,6 @@
 # [Home](https://antonio-catalano.github.io/#) | [About](https://antonio-catalano.github.io/about.html) | [Archive](https://antonio-catalano.github.io/Archive.html) | [Contact](https://antonio-catalano.github.io/form-contact.html)
 
-### In this article I'm going to summarize some of the most utilized functions and operations in _NumPy_ and _Pandas_.
-
+#### In this article I'm going to summarize some of the most utilized functions and operations in _NumPy_ and _Pandas_.
 #### These is an incomplete list (maybe I will add something else in the future), but in my experience these are the most important scripts to have in mind when you make data analysis with Python.
 #### The aim is to do an efficient cheat sheet of NumPy and Pandas, assuming the knowledge of the basics that I left out.
 
