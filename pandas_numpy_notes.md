@@ -61,8 +61,8 @@ Go back to the original df.
 - Delete _row2_ and _row5_ of a DataFrame
 `df.drop(['row2', 'row5'], inplace = True)`<br>
 - Subset of df where both df['col1'] and df['col2'] verify the condition
-`df[(df['col1'] < 0) & (df.col2 > 10)]`
-Note that you __can't__ replace `&` with `and` and brackets are necessary.<br>
+`df[(df['col1'] < 0) & (df.col2 > 10)]`<br>
+Note that you __can't__ replace `&` with `and` and brackets are necessary.
 - You have a Series but you want to give a name to the column and highlight it
 `s.rename('Column_Name').to_frame()`<br>
 - Count the number of positive and not null numbers in each column of a DataFrame
@@ -95,8 +95,7 @@ the negative values with __-1__
 - Concatenate two series in order to have a DataFrame with two columns.
 `pd.concat([arr1, arr2], axis = 1)`<br>
 - Each element of a series is an element of a given list: true or false?.
-`s.isin(given_list)`
-<br>
+`s.isin(given_list)`<br>
 - Number of null values for each column
 `df.isnull().sum(axis = 0)`<br>
 - Create dummy variables for a categorical column and then discard one (in order to avoid the perfect collinearity)
