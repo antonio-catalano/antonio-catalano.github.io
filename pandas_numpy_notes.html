@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>                            <html>                                <head>                                    <meta charset="UTF-8">                                    <title>pandas_numpy_notes</title>                                    <link rel="stylesheet" href="./style/style.css">                                    <link rel="stylesheet" href="./style/kimbie.dark.css">                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                    <style>*,body{margin:0;padding:0}#manual,*{font-family:Vazir}.hljs-comment,.hljs-quote{color:#99ac5b}.hljs-meta,.hljs-name,.hljs-regexp,.hljs-selector-class,.hljs-selector-id,.hljs-tag,.hljs-template-variable,.hljs-variable{color:#dc3958}.hljs-built_in,.hljs-builtin-name,.hljs-deletion,.hljs-link,.hljs-literal,.hljs-number,.hljs-params,.hljs-type{color:#f79a32}.hljs-attribute,.hljs-section,.hljs-title{color:#f06431}.hljs-addition,.hljs-bullet,.hljs-string,.hljs-symbol{color:#9c9}.hljs-function,.hljs-keyword,.hljs-selector-tag{color:#98676a}.hljs{display:block;overflow-x:auto;background:#221a0f;color:#d3af86}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}*{box-sizing:border-box}html{font-size:14px}#manual p,.rtl ol li,.rtl ul li{font-size:1.1rem}body{direction:rtl;color:#24292e}.ltr{direction:ltr!important}.rtl{direction:rtl!important}@media screen and (max-width:600px){body{padding:10px}}@media screen and (min-width:601px){body{padding:50px}}@font-face{font-family:Vazir;src:url(fonts/Vazir.woff)}@font-face{font-family:DejaVuSansMono;src:url(fonts/DejaVuSansMono.ttf)}#manual{width:100%;outline-offset:-22px;padding:10px 15px 65px;line-height:3rem}code,code span,pre code span,ul li pre code{font-family:DejaVuSansMono,Menlo,'Liberation Mono',Consolas,'DejaVu Sans Mono','Ubuntu Mono','Courier New','andale mono','lucida console',monospace!important}#manual p{text-align:justify;padding:.5rem}#manual img{margin:0 auto;display:block;max-width:90%}.rtl ul li{margin-right:3rem!important}.rtl ol li{margin-right:3rem}.ltr ol li,.ltr ul li{font-size:1.1rem;margin-left:3rem}#manual h1,#manual h2,#manual h3{padding:12px;text-shadow:none}#manual h1{padding-top:60px;color:rgba(22,19,19,.8);font-weight:900;font-size:2.1rem}#manual h2{font-weight:500;color:rgba(22,19,19,.6);font-size:1.8rem}#manual h3{font-weight:300;color:rgba(22,19,19,.4);font-size:1.5rem}#manual h4,#manual h5{font-weight:200;color:rgba(22,19,19,.4)}#manual h4{font-size:1.3rem}#manual h5{font-size:1.2rem}@media screen and (min-width:48rem){#list{width:20%}#content{width:100%}}@media screen and (min-width:80rem){#list.none{display:inline-block}#content{width:80%}}@media print{#list{display:none}#content{display:block;width:100%;margin:0 auto}#content li,#content p{font-size:1rem}}.manual-anchor{top:45px}#manualContent{max-width:1448px;margin:0 auto}.manual-link-icon{color:#8f8f8f}.manual-link-icon:hover{color:#000}code,ul li pre code{white-space:pre;word-wrap:normal;padding:3px 7px;color:#24292e;background-color:rgba(27,31,35,.05);border-radius:3px;font-size:1rem}#manual ul li pre,.manual ul li pre,pre{margin:0;direction:ltr!important}#manual ul li pre code,.manual ul li pre code,pre code{direction:ltr!important;line-height:1.45;padding:1em 0 .5em 3em;position:relative;display:block;overflow-x:auto;overflow-y:auto}a{text-decoration:none}.title{float:left;color:#ccc}#manualContent{padding-top:60px}.elements{padding:12px;position:fixed;top:0;right:0;left:0;background-color:#444;height:50px;z-index:1}.input{color:#fff}#savebutton,input{font-size:15px}#savebutton{padding:0 7px!important}#ltr-checkbox-description{margin:3px 15px!important;color:#fff}.button{background-color:#fff;color:#444;font-size:1.6rem;display:inline-block;text-align:center;line-height:2.1rem;border-radius:2px}.button:hover{cursor:pointer;background-color:#eee}#refresh-button{width:2.2rem;vertical-align:middle}</style>                                </head>                                <body><div id="manual" class="ltr"><h1 id="part0" class="manual-anchor"><a href="https://antonio-catalano.github.io/#">Home</a> | <a href="https://antonio-catalano.github.io/about.html">About</a> | <a href="https://antonio-catalano.github.io/Archive.html">Archive</a> | <a href="https://antonio-catalano.github.io/form-contact.html">Contact</a></h1>
+<h3 id="in-this-article-i-m-going-to-summarize-some-of-the-most-utilized-functions-and-operations-in-_numpy_-and-_pandas_-">In this article I'm going to summarize some of the most utilized functions and operations in <em>NumPy</em> and <em>Pandas</em>.</h3>
+<h4 id="these-is-an-incomplete-list-maybe-i-will-add-something-else-in-the-future-but-in-my-experience-these-are-the-most-important-scripts-to-have-in-mind-when-you-make-data-analysis-with-python-">These is an incomplete list (maybe I will add something else in the future), but in my experience these are the most important scripts to have in mind when you make data analysis with Python.</h4>
+<h4 id="the-aim-is-to-do-an-efficient-cheat-sheet-of-numpy-and-pandas-assuming-the-knowledge-of-the-basics-that-i-left-out-">The aim is to do an efficient cheat sheet of NumPy and Pandas, assuming the knowledge of the basics that I left out.</h4>
+<p><em>In this article <strong>arr</strong> is a numpy array, <strong>df</strong> is a DataFrame, <strong>s</strong> is a Series.</em></p>
+<h1 id="part1" class="manual-anchor"><em>NumPy</em></h1>
+<ul>
+<li>Sort in place <code>arr.sort()</code><br>
+Sort out of place <code>np.sort(arr)</code><br></li>
+<li>Find the sorted unique values <code>np.unique(arr)</code><br></li>
+<li>If <em>arr1</em> is a (3 x 2) matrix and <em>arr2</em> is a (2 x 4) matrix
+<code>arr1 @ arr2</code> is the (3 x 4) matrix product.<br></li>
+<li>Inverse of a matrix
+<code>np.linalg.inv(arr)</code><br></li>
+<li>Determinant of a matrix
+<code>np.linalg.det(arr)</code><br></li>
+<li>Draw a random (4 x 3) matrix from a standard normal distribution
+<code>np.random.randn(4,3)</code><br></li>
+<li><p>Draw 100 random numbers chosen from the list [1,5,10] with different probabilities
+<code>np.random.choice([1,5,10], p = [0.2, 0.3, 0.5], size = 100)</code><br></p>
+</li>
+<li><p>Fix the generator seed of random numbers <code>np.random.seed(2981)</code><br></p>
+</li>
+<li>Find the position of the maximum value <code>np.argmax(arr)</code> or <code>arr.argmax()</code><br></li>
+<li>You have a 2 x 2 numpy <em>array</em> and you want all values in a single array
+<code>np.ravel(array)</code> or <code>array.ravel()</code>
+Both operate out of place.<br></li>
+<li>Draw random sample from a multivariate normal distribution
+<code>np.random.multivariate_normal(</code><strong>mean</strong><code>,</code><strong>cov</strong><code>)</code>
+where <strong>mean</strong> is an array of length <em>N</em> and <strong>cov</strong> is the covariance matrix (<em>N</em> x <em>N</em>)<br></li>
+<li>Create a new array from an old one where the negative values are replaced with <strong>0</strong>
+and the positive values with <strong>10</strong>
+<code>new_array = np.where(old_array &lt; 0, 0, 10)</code><br></li>
+<li>Convert a numpy array of <em>str</em> to an array of <em>float</em>.
+<code>arr.astype(float)</code>
+It operates out of place.<br></li>
+<li>70th percentile of a numpy array.
+<code>np.percentile(arr, 70)</code><br></li>
+<li>Vertical stack: <em>arr1</em> is a (3 x 2) numpy array and arr2 is a (2 x 2).
+<code>np.r_[arr1,arr2]</code> is a (5 x 2) numpy array .<br></li>
+<li>Horizontal stack: <em>arr1</em> is a (3 x 2) numpy array and arr2 is a (3 x 6).
+<code>np.c_[arr1,arr2]</code> is a (3 x 8) numpy array.<br></li>
+<li>Reshape out of place an array of 12 elements in a (4 x 3) matrix
+<code>arr.reshape((4,3))</code><br></li>
+<li>Find the maximum value for each index among 4 arrays of the same shape.
+<code>np.maximum(arr1, arr2, arr3, arr4)</code></li>
+</ul>
+<h1 id="part2" class="manual-anchor"><em>Pandas</em></h1>
+<ul>
+<li><p>Display only 2 floating points for each Series or DataFrame
+<code>pd.options.display.float_format = '{:.2f}'.format</code><br></p>
+</li>
+<li><p>Set a column as index <code>df.set_index('name_col', inplace = True)</code><br>
+Go back to the original df.<code>df.reset_index(inplace = True)</code><br></p>
+</li>
+<li>Delete a column of a DataFrame <code>del df['col_name']</code><br></li>
+<li><p>Delete <em>row2</em> and <em>row5</em> of a DataFrame <code>df.drop(['row2', 'row5'], inplace = True)</code><br></p>
+</li>
+<li><p>Subset of df where both df['col1'] and df['col2'] verify the condition
+<code>df[(df['col1'] &lt; 0) &amp; (df.col2 &gt; 10)]</code><br>
+Note that you <strong>can't</strong> replace <code>&amp;</code> with <code>and</code> and brackets are necessary.</p>
+</li>
+<li>You have a Series but you want to give a name to the column and highlight it
+<code>s.rename('Column_Name').to_frame()</code><br></li>
+<li>Count the number of positive and not null numbers in each column of a DataFrame
+<code>(df &gt; 0).sum(axis = 0)</code><br></li>
+<li>Find the index label where column <em>A</em> has the minimum value
+<code>df['A'].idxmin()</code><br></li>
+<li>Find the position where column <em>A</em> has the minimum value
+<code>df['A'].values.argmin()</code><br></li>
+<li>Plot a one-dimensional random walk in one line
+<code>pd.Series(np.random.choice([-1,1], size = 10_000).cumsum()).plot()</code><br></li>
+<li><em>R</em> is a numpy array containing <em>n</em> returns: calculate the final capital (cumulative return)
+<code>(R + 1).prod()</code><br></li>
+<li>Create a new DataFrame from an old one where we retain the positive values but we replace
+the negative values with <strong>-1</strong>
+<code>df_new = df_old.where(df_old &gt; 0, -1)</code><br></li>
+<li>Instantiate a time series DataFrame of 252 daily gaussian data ending at 1st January 2020
+<code>df = pd.DataFrame({'Normal Data' : np.random.randn(252)}, index = pd.date_range(end = '1/1/2020', periods = 252))</code><br></li>
+<li>Sort in decreasing order a DataFrame by a given columns
+<code>df.sort_values(by = 'col_name', ascending = False)</code><br></li>
+<li>Sort in place a DataFrame by index
+<code>df.sort_index(inplace = True)</code><br></li>
+<li>Drop rows with at least 1 null value
+<code>df.dropna(axis = 0)</code><br></li>
+<li>Drop rows where only the <em>C</em> column has a null value
+<code>df.dropna(subset = ['C'])</code><br></li>
+<li>Replace <em>null</em> values with the median value of the corresponding column
+<code>df.fillna(df.median(), axis = 0)</code><br></li>
+<li>Rename a column
+<code>df.rename(columns = {'old_name' : 'new_name'}, inplace = True)</code><br></li>
+<li>Concatenate two series in order to have a DataFrame with two columns
+<code>pd.concat([arr1, arr2], axis = 1)</code><br></li>
+<li>Each element of a series is an element of a given list: true or false?
+<code>s.isin(given_list)</code><br></li>
+<li>Number of null values for each column
+<code>df.isnull().sum(axis = 0)</code><br></li>
+<li>Create dummy variables for a categorical column and then discard one (in order to avoid the perfect collinearity)
+<code>pd.get_dummies(df['categorical_col']).iloc[:,:-1]</code><br></li>
+<li>Returns
+<code>df['Adj Close'].pct_change()</code><br></li>
+<li>Log returns
+<code>np.log(df['Adj Close'] / df['Adj Close'].shift(1))</code><br></li>
+<li>100 days Rolling correlation
+<code>df['AAPL_rets'].rolling(100).corr(df['SPY_rets'])</code><br></li>
+<li>We have a daily price dataframe: find the first, high, low and last price of each month
+<code>df['Adj Close'].resample('M').ohlc()</code><br></li>
+<li>Convert an index of <em>str</em> in <em>DatetimeIndex</em>
+<code>df.index = pd.to_datetime(df.index)</code><br></li>
+<li>Divide a series in quartiles and give them a label
+<code>pd.qcut(s, 4, labels = 'Q1 Q2 Q3 Q4'.split())</code><br></li>
+<li>Bootstrap a DataFrame with 20 extractions
+<code>df.sample(20, replace = True)</code><br></li>
+<li>Turn each data of the dataframe in 4 floating points
+<code>df.applymap(lambda x: '%.4f' % x)</code><br></li>
+<li>Group by column <em>C</em> and apply a function <em>f(df, k, q)</em> to each column.
+<code>df.groupby('C').apply(f, k, q)</code><br></li>
+<li>Group by column <em>C</em> and compute the <em>sum</em> for column <em>A</em> and the <em>mean</em> and <em>std</em> for column <em>B</em>
+<code>df.groupby('C').agg({'A' : 'sum', 'B' : ['mean', 'std']})</code><br></li>
+<li>Create a pivot table where both index and columns are created with a <em>groupby</em> operation <br>of the columns of the original DataFrame, then we apply the <em>mean function</em> to the <em>'Returns'</em> column.
+<code>df.pivot_table(values = ['Returns'], index = ['Utilities','Financial','Energy'], columns = ['Day of the week'], aggfunc = 'mean')</code><br></li>
+</ul>
+</div></body>                            </html>
