@@ -13503,7 +13503,7 @@ But in the middle of the pandemic they would tipically differ.<br></p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It seems that the <em>Naive Estimate</em> underestimates the real value, because the pandemic is still ongoing.<br>
 On the contrary the <em>Resolved Estimate</em> seems to overestimate the real value.<br></p>
-<p>We are going to show that if we use a logistic curve to model the epidemic (slow increasing initially, rapid exponentially increasing after a while and negative 2nd derivative after the temporal mid point of the pandemic (when quarantines start working) ), the bias of the two measures <strong>doesn't depend</strong> on the <em>death probability</em> , but only on the <em>death lag</em> (the average number of days between diagnosis and death) and the <em>recovery lag</em> (the average number of days between diagnosis and recovery).</p>
+<p>We are going to show that if we use a logistic growth model for the epidemic (slow increasing initially, rapid exponentially increasing after a while and negative 2nd derivative after the temporal mid point of the pandemic (when quarantines start working) ), the bias of the two measures <strong>doesn't depend</strong> on the <em>death probability</em> , but only on the <em>death lag</em> (the average number of days between diagnosis and death) and the <em>recovery lag</em> (the average number of days between diagnosis and recovery).</p>
 
 </div>
 </div>
@@ -13536,7 +13536,7 @@ In other words:  <em>Resolved Estimate</em> overestimates too much the real CFR 
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In our simulation we assume that pandemic will last 200 days.<br>
 The accuracy of this assumption is not fundamental for our aim.<br>
-We use a growth factor of the logistic model $k = 0.08$, as the author of original article did.<br></p>
+We use a growth rate of the logistic function $k = 0.08$, as the author of original article did.<br></p>
 
 </div>
 </div>
@@ -13621,10 +13621,10 @@ We use a growth factor of the logistic model $k = 0.08$, as the author of origin
 
 
 
-<div id="936046dc-2720-4d53-924c-7247054f800e"></div>
+<div id="2b6b0612-e414-49b9-9da5-0e8c014bc96a"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#936046dc-2720-4d53-924c-7247054f800e');
+var element = $('#2b6b0612-e414-49b9-9da5-0e8c014bc96a');
 IPython.OutputArea.prototype._should_scroll = function(lines) {
     return false;
 }
