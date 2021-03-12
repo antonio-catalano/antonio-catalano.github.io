@@ -2,12 +2,12 @@ input, textarea {
     margin:2%;
     border-bottom:1px inside #1c6c9e;
     border-radius:1%;
-    box-shadow: 1px 1px 4px white;
+    box-shadow: 1px 1px 2px white;
 }
 
 textarea {
     padding:7% 3.8%;
-    box-shadow: 1px 1px 17px white;
+    box-shadow: 1px 1px 1px white;
 }
 
 input[type=text],input[type=email]{
@@ -21,9 +21,9 @@ input[type=submit] {
 
 div.container#new {
     margin:auto;
-    border-radius: 2%;
+    border-radius: 1%;
     background-image: url("phone.jpg");
-    padding: 5%;
+    padding: 2%;
 }
 
 
@@ -31,7 +31,7 @@ input[type=submit]:hover {
     background-color: white;
     cursor: pointer;
 
-}
+} 
 
 input[value=Send] {
 
